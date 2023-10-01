@@ -1,6 +1,9 @@
 body {
   margin: 0;
   font-family: "Nunito Sans", sans-serif;
+  background-image: url("./poster.jpg");
+  background-size: auto;
+  
 }
 
 .main {
@@ -22,27 +25,32 @@ body {
 .titles {
   width: 300px;
   border-right: solid 0.5px black;
+  
 }
 
 .mainTitle,
 a:hover {
   color: blue;
+  
 }
 
 h1 {
   margin: 0;
   font-size: 80px;
+  
 }
 
 .tag {
   margin-top: 2%;
   width: 600px;
   font-style: italic;
+  
 }
 
 div.titles > p {
   margin-bottom: -10px;
   margin-top: -10px;
+  
 }
 
 .buttons {
@@ -76,4 +84,8 @@ a {
   text-decoration: none;
   color: black;
   transition: ease 0.2s;
+  background-color: blue ;
+  padding: 3px ;
+  border: 0.5px solid blue ;
 }
+
