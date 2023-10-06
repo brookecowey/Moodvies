@@ -11,9 +11,10 @@ import DeleteIcon from '@mui/icons-material/Delete'
 
  
 const Dashboard = (props) => {
+    console.log("Hello")
     return (
         <Container maxWidth="lg" className="car-container">
-            <h4>Welcome, {props.user.username}</h4>
+            {/* <h4>Welcome, {props.user.username}</h4> */}
             <div className="flex-container">
             </div>
             <Table>
@@ -28,7 +29,7 @@ const Dashboard = (props) => {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                {props.cars.map((car, idx) => (
+                {/* {props.cars.map((car, idx) => (
                     <TableRow key={car.id}>
                         <TableCell component="th" scope="row">
                             {car.id}
@@ -44,7 +45,7 @@ const Dashboard = (props) => {
                                 className="icon text-red" />
                         </TableCell>
                     </TableRow>
-                ))}
+                ))} */}
                 </TableBody>
             </Table>
         </Container>

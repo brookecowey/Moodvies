@@ -14,10 +14,10 @@ function App() {
   return (
     <BrowserRouter>
     <Navigation />
-    <Home />
     <Routes>
       <Route path="/" element={<Signin  setToken={setToken}/>}/>
       <Route path="/signup" element={<Signup />}/>
+      <Route path="/dashboard" element={<Dashboard />}/>
     </Routes>
 
     </BrowserRouter>

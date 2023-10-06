@@ -1,6 +1,8 @@
 import {useState} from 'react'
 import axios from 'axios';
 import {Link, useNavigate} from 'react-router-dom';
+import Home from './Home'
+import styles from "./Home.module.css";
 
 const Signin = (props) => {
   const [email, setEmail] = useState("");
@@ -9,9 +11,11 @@ const Signin = (props) => {
 
 
   return (
-    <>
+    <div className={styles.outerContainer}>
+      <div className={styles.innerContainer}>
+        <Home />
       <form 
-        className='form'
+        className={styles.form}
         onSubmit={(e) => {
           e.preventDefault();
 
@@ -26,7 +30,7 @@ const Signin = (props) => {
 
           setEmail("");
           setPassword("");
-          navigate("/todos");
+          navigate("/dashboard");
         }}
       >
         <label className='label'>
@@ -37,10 +41,16 @@ const Signin = (props) => {
           Password:
           <input type="password" className="input"onChange={(e) => setPassword(e.target.value)} value={password}/>
         </label>
-        <input type="submit" className="submit" />
+        <input type="submit" className={styles.submit} />
         <p>New here? <Link to="/signup">Sign up now!</Link></p>
       </form>
-    </>
+      <div className={styles.tag}>
+        <p>
+          <strong>Moodvies</strong> helps you keep pick a movie based on your current mood.
+        </p>
+      </div>
+    </div>
+    </div>
   )
 }
 

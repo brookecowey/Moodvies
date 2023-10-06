@@ -1,7 +1,7 @@
 import React from "react";
 
 
-import styles from "./Home.css";
+import styles from "./Home.module.css";
 
 export default function Home() {
 
@@ -14,11 +14,7 @@ export default function Home() {
         </div>
 
       </div>
-      <div className={styles.tag}>
-        <p>
-          <strong>Moodvies</strong> helps you keep pick a movie based on your current mood.
-        </p>
-      </div>
+      
     </div>
   );
 }

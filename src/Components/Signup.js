@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
+import Home from './Home'
 
 const Signup = (props) => {
   const [name, setName] = useState("");
@@ -11,6 +12,7 @@ const Signup = (props) => {
 
   return (
     <>
+    <Home />
       <form 
         className='form'
         onSubmit={(e) => {
