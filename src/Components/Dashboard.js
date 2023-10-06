@@ -20,16 +20,13 @@ const Dashboard = (props) => {
             <Table>
                 <TableHead>
                     <TableRow>
-                        <TableCell>Id</TableCell>
-                        <TableCell>Make/Model</TableCell>
-                        <TableCell>MPG</TableCell>
-                        <TableCell>Cylinders</TableCell>
-                        <TableCell>Horsepower</TableCell>
-                        <TableCell>Delete</TableCell>
+                        <TableCell>Date</TableCell>
+                        <TableCell>Mood</TableCell>
+                        <TableCell>Movie Selected</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                {/* {props.cars.map((car, idx) => (
+                {/* {props.user.username((car, idx) => (
                     <TableRow key={car.id}>
                         <TableCell component="th" scope="row">
                             {car.id}

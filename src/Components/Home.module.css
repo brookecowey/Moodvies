@@ -53,7 +53,7 @@ body {
 
 .mainTitle,
 a:hover {
-  color: blue;
+  color: rgb(142, 175, 224);
   
 }
 
@@ -93,18 +93,19 @@ button {
 
 button:hover {
   background-color: white;
-  color: black;
-  border: solid 0.5px blue;
-  box-shadow: 1px 1px 3px blue;
+  color: white;
+  border: solid 0.5px rgb(142, 175, 224);
+  box-shadow: 1px 1px 1px rgb(142, 175, 224);
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
   transition: ease 0.2s;
-  background-color: blue ;
+  /* background-color: blue ; */
   padding: 3px ;
-  border: 0.5px solid blue ;
+  /* border: 0.5px solid blue ; */
+  
 }
 
 .form {
