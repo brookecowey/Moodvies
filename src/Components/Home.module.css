@@ -13,11 +13,12 @@ body {
   background-size: auto;
   display: flex; justify-content: center; align-content: center;
   
+  
 }
 
 .innerContainer {
-  height: 70vh;
-  width: 70vw;
+  height: 65vh;
+  width: 65vw;
   margin-top: 10%;
   background-color: white;
   display: flex; justify-content: center; align-content: center;
@@ -38,7 +39,7 @@ body {
 
 .subContainer {
 
-  height: 200px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,4 +121,8 @@ a {
   margin-top: 15px;
   margin-bottom: 30px;
   margin-left: 70px;
+}
+
+.box {
+  padding: 15px;
 }

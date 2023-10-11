@@ -1,17 +1,30 @@
 import React from 'react'
 import { AppBar, Toolbar, IconButton, 
-  Typography
+  Typography, Box
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import { Link } from 'react-router-dom'
+import Moodvies from './Moodvies.png'
 
 const Navigation = () => {
     return (
         <AppBar position="relative">
             <Toolbar>
+            <Box
+        component="img"
+        sx={{ height: 60 }}
+        alt="Logo"
+        src={Moodvies}
+      />
                 <IconButton color="inherit">
                     <MenuIcon />
                 </IconButton>
+                {/* <Box
+        component="img"
+        sx={{ height: 60 }}
+        alt="Logo"
+        src={Moodvies}
+      /> */}
                 <Typography variant="h6" style={{ flexGrow: "1" }}>
                     Moodvies.com
                 </Typography>
