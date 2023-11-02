@@ -26,10 +26,10 @@ function Documentary() {
       },[])
       console.log(documentaries)
   return (
-    <div> //can put grid here
+    <div> 
       {documentaries.map((documentary) => (
         <div key={documentary.id}>
-          <img src={`https://image.tmdb.org/t/p/w500${documentary.poster_path}`} alt={documentary.title}/>
+          <img src={`https://image.tmdb.org/t/p/w500${documentary.poster_path}`} width={200} height={300} alt={documentary.title}/>
       
           <h2>
             {documentary.title}

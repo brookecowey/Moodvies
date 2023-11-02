@@ -26,10 +26,10 @@ function Comedy() {
       },[])
       console.log(comedies)
   return (
-    <div> //can put grid here
+    <div> 
       {comedies.map((comedy) => (
         <div key={comedy.id}>
-          <img src={`https://image.tmdb.org/t/p/w500${comedy.poster_path}`} alt={comedy.title}/>
+          <img src={`https://image.tmdb.org/t/p/w500${comedy.poster_path}`} width={200} height={300} alt={comedy.title}/>
       
           <h2>
             {comedy.title}
