@@ -87,17 +87,17 @@ button {
   background-color: rgba(0, 0, 0, 0.493);
   color: white;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 15px;
+  /* font-size: 15px; */
   cursor: pointer;
   transition: ease 0.2s;
 }
 
-button:hover {
+/* button:hover {
   background-color: white;
   color: white;
   border: solid 0.5px rgb(142, 175, 224);
   box-shadow: 1px 1px 1px rgb(142, 175, 224);
-}
+} */
 
 a {
   text-decoration: none;

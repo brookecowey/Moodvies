@@ -1,7 +1,6 @@
 import React from "react";
-
-
 import styles from "./Home.module.css";
+import MoodSelector from './MoodSelector.js'
 
 export default function Home() {
 
@@ -14,7 +13,7 @@ export default function Home() {
         </div>
 
       </div>
-      
+      <MoodSelector />
     </div>
   );
 }

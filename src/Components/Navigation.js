@@ -16,9 +16,9 @@ const Navigation = () => {
         alt="Logo"
         src={Moodvies}
       />
-                <IconButton color="inherit">
+                {/* <IconButton color="inherit">
                     <MenuIcon />
-                </IconButton>
+                </IconButton> */}
                 {/* <Box
         component="img"
         sx={{ height: 60 }}

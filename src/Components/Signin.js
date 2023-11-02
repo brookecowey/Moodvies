@@ -9,29 +9,28 @@ const Signin = (props) => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
+  const login = (e) => {
+    e.preventDefault();
+
+    axios.post(
+      "https://moodvies-backend.onrender.com/login", {
+        email,
+        password
+      }
+    ).then((response) => {
+      props.setToken(response.data.token)
+      navigate("/dashboard");
+    })
+
+  }
+
 
   return (
     <div className={styles.outerContainer}>
       <div className={styles.innerContainer}>
-        <Home />
       <form 
         className={styles.form}
-        onSubmit={(e) => {
-          e.preventDefault();
-
-          axios.post(
-            "database-1.cuxmae9izxek.us-east-2.rds.amazonaws.com", {
-              email,
-              password
-            }
-          ).then((response) => {
-            props.setToken(response.data.token)
-          })
-
-          setEmail("");
-          setPassword("");
-          navigate("/dashboard");
-        }}
+        onSubmit={login}
       >
         <label className='label'>
           Email:
@@ -42,7 +41,7 @@ const Signin = (props) => {
           <input type="password" className="input"onChange={(e) => setPassword(e.target.value)} value={password}/>
         </label>
         <input type="submit" className={styles.submit} />
-        <p>New here? <Link to="/signup">Sign up now!</Link></p>
+        <p>New here? <Link style={{ color: "black"}} to="/signup">Sign up now!</Link></p>
       </form>
       <div className={styles.tag}>
         <p>
